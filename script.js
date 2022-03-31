@@ -36,13 +36,13 @@ function generatePassword() {
 
 
 
-  var lowerCase = confirm("password must include lowercase characters.");
+  var lowerCase = confirm("Would you like to include lowercase letters? click OK for yes, or Cancel for no.");
 
-  var upperCase = confirm("password must include uppercase characters.");
+  var upperCase = confirm("Would you like to include uppercase letters? click OK for yes, or Cancel for no.");
 
-  var specialCharacter = confirm("password must include special characters.");
+  var specialCharacter = confirm("Would you like to include special character letters? click OK for yes, or Cancel for no.");
 
-  var numbers = confirm("password must include numbers.");
+  var numbers = confirm("Would you like to include numbers? click OK for yes, or Cancel for no.");
 
   var display = [];
 
