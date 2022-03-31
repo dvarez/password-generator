@@ -7,7 +7,7 @@
 //my input should be validated and at least one character type should be selected WHEN all prompts are answered
 //a password is generated that matches the selected criteria WHEN the password is generated
 //the password is either displayed in an alert or written to the page
- 
+
 var lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 var upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
@@ -18,14 +18,18 @@ var numberOne = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 
 
-function generatePassword(){
+function generatePassword() {
   //TODO: your code goes here
-  var length = prompt("Password entered must be at least 8 characters Long. Please enter your password length here");
-            while(length<8 || length>128 || isNaN(length)) 
-            {length = prompt("Password entered must be at least 8 characters Long. Please enter your password length here");
+  //get password length from user
+  //password must be a number between 8 and 128
+
+  var length = prompt("Please enter your password length. Password length must be a number between 8 and 128. ");
+  while (length < 8 || length > 128 || isNaN(length)) {
+    length = prompt("Invalid entry,password must be at least 8 characters Long. Please enter your password length here");
 
 
-            }
+  }
+
 
 
 
@@ -42,28 +46,28 @@ function generatePassword(){
 
   var display = [];
 
-  if (lowerCase) { 
+  if (lowerCase) {
     display = display.concat(lower);
   }
 
-  if (upperCase) { 
+  if (upperCase) {
     display = display.concat(upper);
   }
 
-  if (specialCharacter) { 
+  if (specialCharacter) {
     display = display.concat(special.split(""));
   }
 
-  if (numbers) { 
+  if (numbers) {
     display = display.concat(numberOne);
   }
 
-  console.log (display)
+  console.log(display)
   var pass = ""
 
 
   for (var i = 0; i < length; i++) {
-    pass += display[Math.floor(Math.random() * display.length)]; 
+    pass += display[Math.floor(Math.random() * display.length)];
   }
 
 
