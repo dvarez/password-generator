@@ -20,3 +20,6 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 The site can be viewed at:  https://dvarez.github.io/password-generator/
+
+
+![2022-04-17](https://user-images.githubusercontent.com/99370165/163711909-347fe4b3-628b-42c5-9e1e-a37b63fc9978.png)
