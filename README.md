@@ -23,3 +23,4 @@ The site can be viewed at:  https://dvarez.github.io/password-generator/
 
 
 
+![2022-04-17](https://user-images.githubusercontent.com/99370165/163712209-20986a4b-67a1-4768-95c1-5c620863eaef.png)
